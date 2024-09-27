@@ -8,7 +8,7 @@ const productos = [
   {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
 ]
 
-const li = document.getElementsByName("lista-de-productos")
+const li = document.getElementById("lista-de-productos")//Se cambio a getElementById
 const $i = document.querySelector('.input');
 
 for (let i = 0; i < productos.length; i++) {
@@ -24,11 +24,10 @@ for (let i = 0; i < productos.length; i++) {
 
   d.appendChild(ti)
   d.appendChild(imagen)
-
   li.appendChild(d)
 }
 
-displayProductos(productos)
+//displayProductos(productos) se comenta la linea
 const botonDeFiltro = document.querySelector("button");
 
 botonDeFiltro.onclick = function() {
