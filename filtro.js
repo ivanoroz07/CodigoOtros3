@@ -9,7 +9,7 @@ const productos = [
 ]
 
 const li = document.getElementById("lista-de-productos")//Se cambio a getElementById
-const $i = document.querySelector('.input');
+const $i = document.querySelector('input');
 
 for (let i = 0; i < productos.length; i++) {
   var d = document.createElement("div")
